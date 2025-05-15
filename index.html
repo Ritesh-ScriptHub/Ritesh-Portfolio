@@ -14,21 +14,27 @@
     <div class="animation-bg" id="animationBg"></div>
 
     <!-- Bottom Navigation -->
-    <nav class="bottom-nav">
-        <a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a>
-        <a href="#qualification" class="nav-link"><i class="fas fa-graduation-cap"></i> Qualification</a>
-        <a href="#skills" class="nav-link"><i class="fas fa-laptop-code"></i> Skills</a>
-        <a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i> Experience</a>
-        <a href="#projects" class="nav-link"><i class="fas fa-code"></i> Projects</a>
-        <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact Me</a>
-    </nav>
+    <div class="nav-container">
+        <nav class="bottom-nav">
+            <a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a>
+            <a href="#qualification" class="nav-link"><i class="fas fa-graduation-cap"></i> Qualification</a>
+            <a href="#skills" class="nav-link"><i class="fas fa-laptop-code"></i> Skills</a>
+            <a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i> Experience</a>
+            <a href="#projects" class="nav-link"><i class="fas fa-code"></i> Projects</a>
+            <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact Me</a>
+            <!-- Dark Mode Toggle Button-->
+            <button class="dark-mode-toggle" id="darkModeToggle">
+                <i class="fas fa-sun"></i>
+            </button>
+        </nav>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
             <h1>Hi, I'm Ritesh</h1>
             <h2>A <span class="typing" id="typingText"></span><span class="cursor">|</span></h2>
-            <p>I'm a second-year B-tech student at Bengal College of Enginnering and Technology (BCET), passionate about creating beautiful and functional websites. I love turning ideas into reality through code.</p>
+            <p>I'm a second-year B-tech student at Bengal College of Engineering and Technology (BCET), passionate about creating beautiful and functional websites. I love turning ideas into reality through code.</p>
             <a href="#projects" class="btn">View My Work</a>
             <a href="assets/CV_Ritesh.pdf" class="btn" target="_blank" id="cvButton">Download CV</a>
         </div>
@@ -58,7 +64,7 @@
                 </div>
             </div>
             <div class="qualification-card">
-                <h3>Bengal College of Enginnering & Technology, Durgapur</h3>
+                <h3>Bengal College of Engineering & Technology, Durgapur</h3>
                 <p class="degree">BTech in Information Technology</p>
                 <p class="year">2023 - Present</p>
                 <div class="qualification-icon">
@@ -225,9 +231,9 @@
             <a href="mailto:solodev20@gmail.com"><i class="fas fa-envelope"></i></a>
         </div>
         <p>&copy; 2025 | Ritesh Portfolio | All rights reserved.</p>
-        <button class="dark-mode-toggle" id="darkModeToggle">
+        <!-- <button class="dark-mode-toggle" id="darkModeToggle">
             <i class="fas fa-sun"></i>
-        </button>
+        </button> -->
     </footer>
     <script src="app.js"></script>
 </body>

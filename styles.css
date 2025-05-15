@@ -55,8 +55,25 @@ body {
     background: var(--dark);
     display: flex;
     justify-content: center;
-    padding: 1rem 0;
+    padding: 0.7rem 0;
     z-index: 1000;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Hero Section */
@@ -391,30 +408,16 @@ section {
     display: block;
 }
 
-.nav-link {
-    color: white;
-    text-decoration: none;
-    margin: 0 1.5rem;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    transition: background-color 0.3s;
-}
-
-.nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
 /* Dark Mode Toggle */
 .dark-mode-toggle {
     position: fixed;
-    bottom: 11px;
+    bottom: 0.6rem;
     right: 20px;
     z-index: 1000;
     background: var(--card-bg);
     border: none;
-    width: 50px;
-    height: 50px;
+    width: 2.4rem;
+    height: 2.4rem;
     border-radius: 50%;
     cursor: pointer;
     display: flex;
@@ -424,7 +427,7 @@ section {
 }
 
 .dark-mode-toggle i {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color: var(--text);
 }
 
@@ -521,5 +524,15 @@ footer {
 
     .right {
         left: 0;
+    }
+     .dark-mode-toggle {
+        width: 40px;
+        height: 40px;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .dark-mode-toggle i {
+        font-size: 1.2rem;
     }
 }
