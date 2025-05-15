@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritesh | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="assets/pic.jpg" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Animation Background -->
+    <div class="animation-bg" id="animationBg"></div>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a>
+        <a href="#qualification" class="nav-link"><i class="fas fa-graduation-cap"></i> Qualification</a>
+        <a href="#skills" class="nav-link"><i class="fas fa-laptop-code"></i> Skills</a>
+        <a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i> Experience</a>
+        <a href="#projects" class="nav-link"><i class="fas fa-code"></i> Projects</a>
+        <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact Me</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Hi, I'm Ritesh</h1>
+            <h2>A <span class="typing" id="typingText"></span><span class="cursor">|</span></h2>
+            <p>I'm a second-year B-tech student at Bengal College of Enginnering and Technology (BCET), passionate about creating beautiful and functional websites. I love turning ideas into reality through code.</p>
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="assets/CV_Ritesh.pdf" class="btn" target="_blank" id="cvButton">Download CV</a>
+        </div>
+        <div class="hero-image">
+            <img src="assets/pic.jpg" draggable="false" alt="Ritesh" class="profile-pic" id="profilePic">
+        </div>
+    </section>
+
+    <!-- Qualification Section -->
+    <section id="qualification">
+        <h2 class="section-title">Qualification</h2>
+        <div class="qualification-cards">
+            <div class="qualification-card">
+                <h3>DAV Public School, Pandaveswar</h3>
+                <p class="degree">Secondary (10<sup>th</sup>)</p>
+                <p class="year">2020 - 2021</p>
+                <div class="qualification-icon">
+                    <i class="fas fa-school"></i>
+                </div>
+            </div>
+            <div class="qualification-card">
+                <h3>R.K.D Colege, Patna</h3>
+                <p class="degree">Higher Secondary (12<sup>th</sup>)</p>
+                <p class="year">2021 - 2022</p>
+                <div class="qualification-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+            </div>
+            <div class="qualification-card">
+                <h3>Bengal College of Enginnering & Technology, Durgapur</h3>
+                <p class="degree">BTech in Information Technology</p>
+                <p class="year">2023 - Present</p>
+                <div class="qualification-icon">
+                    <i class="fas fa-university"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <!-- <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Web Development</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 90%">HTML</div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 85%">CSS</div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 80%">JavaScript</div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Programming</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 75%">Java</div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 70%">Python</div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 80%">C</div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+            <!-- Web Development (Bar Style) -->
+            <div class="skill-category">
+                <h3>Web Development</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 91%">HTML <div class="percent">91%</div></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 85%">CSS <div class="percent">85%</div></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 59%">JavaScript <div class="percent">59%</div></div>
+                </div>
+            </div>
+
+            <!-- Programming (Circular Style) -->
+            <div class="skill-category">
+            <h3>Programming</h3>
+            <div class="circular-skill">
+                <div class="circle" data-percentage="51">
+                    <svg>
+                        <circle cx="50" cy="50" r="45"></circle>
+                        <circle cx="50" cy="50" r="45" class="progress"></circle>
+                    </svg>
+                    <div class="number">51%</div>
+                    <p>Java</p>
+                </div>
+                <div class="circle" data-percentage="67">
+                    <svg>
+                        <circle cx="50" cy="50" r="45"></circle>
+                        <circle cx="50" cy="50" r="45" class="progress"></circle>
+                    </svg>
+                    <div class="number">67%</div>
+                    <p>Python</p>
+                </div>
+                <div class="circle" data-percentage="80">
+                    <svg>
+                        <circle cx="50" cy="50" r="45"></circle>
+                        <circle cx="50" cy="50" r="45" class="progress"></circle>
+                    </svg>
+                    <div class="number">80%</div>
+                    <p>C</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-item">
+            <h3>Coordinator</h3>
+            <span class="date">2024 - Present</span>
+            <p>CyberCell Club, BCET College</p>
+            <p>Co-ordinating in events, workshops, and managing club activities. Helping students learn new technologies and collaborate on projects.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Member</h3>
+            <span class="date">2022 - Present</span>
+            <p>IETE (Institution of Electronics and Telecommunication Engineers)</p>
+            <p>Participating in technical seminars, workshops, and contributing to technical publications.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="assets/gumroad-website-clone.png" alt="Website Clone" class="project-img">
+                <div class="project-info">
+                    <h3>Gumroad Website Clone</h3>
+                    <p>A clone of a popular website with similar UI/UX (In progress).</p>
+                    <a href="https://github.com/Ritesh-ScriptHub/Gumroad_Clone" class="btn" target="_blank">View on GitHub</a>                </div>
+            </div>
+            <div class="project-card">
+                <img src="assets/parallax-website.png" alt="Parallax Website" class="project-img">
+                <div class="project-info">
+                    <h3>Parallax Website</h3>
+                    <p>A basic website with parallax scrolling effects.</p>
+                    <a href="https://github.com/Ritesh-ScriptHub/Parallax_website" class="btn" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="assets/crackUI-project.png" alt="Cybercell Website" class="project-img">
+                <div class="project-info">
+                    <h3>CyberCell Website</h3>
+                    <p>A basic website(*not original) made during an event.</p>
+                    <a href="https://github.com/Ritesh-ScriptHub/CyberCell----Crack-UI" class="btn" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+        <p class="more-projects">More projects on <a href="https://github.com/Ritesh-ScriptHub" target="_blank">GitHub</a>, so don't forget to check that out.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer with Social Links -->
+    <footer>
+        <div class="social-links">
+            <a href="https://x.com/RahulDe31800204?t=cZO8uO2NADZz6cfYOEjgSA&s=08" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/ritesh_vishwa_?igsh=OWRqcWt3d3hzNHc5" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://m.facebook.com/ritesh.raj.468774/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/Ritesh-ScriptHub" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:solodev20@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>&copy; 2025 | Ritesh Portfolio | All rights reserved.</p>
+        <button class="dark-mode-toggle" id="darkModeToggle">
+            <i class="fas fa-sun"></i>
+        </button>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
